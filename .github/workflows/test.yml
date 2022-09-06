@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - main
+      - maint/*
+    tags:
+      - "*"
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  needs-review:
+    runs-on: ubuntu-latest
+    environment: review
+    steps:
+      - run: echo "Testing"
