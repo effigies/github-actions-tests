@@ -13,6 +13,6 @@ defaults:
 jobs:
   needs-review:
     runs-on: ubuntu-latest
-    environment: review
+    environment: Package deployment
     steps:
       - run: echo "Testing"
